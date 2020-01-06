@@ -5,33 +5,22 @@ import Nav from '../components/nav'
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Schedule Sticker</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
+      <h1 className="title">(ここにロゴを表示)</h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        Schedule Stickerは1週間のタスクを管理するサイト
       </p>
 
       <div className="row">
         <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
+          <h3>はじめる &rarr;</h3>
+          {/*<p>Learn more about Next.js in the documentation.</p>*/}
         </a>
       </div>
     </div>
@@ -73,7 +62,8 @@ const Home = () => (
       .card h3 {
         margin: 0;
         color: #067df7;
-        font-size: 18px;
+        text-align:center;
+        font-size: 22px;
       }
       .card p {
         margin: 0;
