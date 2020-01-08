@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import Nav from '../components/nav'
 
 const Home = () => (
@@ -16,12 +17,11 @@ const Home = () => (
       <p className="description">
         Schedule Stickerは1週間のタスクを管理するサイト
       </p>
-
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>はじめる &rarr;</h3>
-          {/*<p>Learn more about Next.js in the documentation.</p>*/}
-        </a>
+      
+      <div className="row card">
+        <Link href='./other'>
+          <h3>はじめる</h3>
+        </Link>  
       </div>
     </div>
 
