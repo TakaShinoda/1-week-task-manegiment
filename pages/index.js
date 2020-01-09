@@ -41,7 +41,7 @@ const Home = () => (
         line-height: 1.15;
         font-size: 90px;
         color: #FF7E73;
-        font-family: 'Impact', sans-serif;
+        font-family: 'Comic Sans MS', cursive;
       }
       .title,
       .description {
