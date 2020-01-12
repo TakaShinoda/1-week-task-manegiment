@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../components/nav'
-import Image from '../static/Image'
+import Title from '../components/title'
 
 const Home = () => (
   <div>
@@ -12,18 +12,17 @@ const Home = () => (
     </Head>
 
     <Nav />
-
+    <div>
+      <Title />
+    </div>
+    
     <div className="hero">
-      <h1 className="title">
-        {/*<Image fname='logo.png' size='900' />*/}
-        Schedule Sticker
-      </h1>
       <p className="description">
-        Schedule Stickerは1週間のタスクを管理するサイト
+        1週間のタスクを管理するサイト
       </p>
       
       <div className="row card">
-        <Link href='./other'>
+        <Link href='./signin'>
           <h3>はじめる</h3>
         </Link>  
       </div>
@@ -34,16 +33,6 @@ const Home = () => (
         width: 100%;
         color: #333;
       }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 90px;
-        color: #FF7E73;
-        font-family: 'Comic Sans MS', cursive;
-      }
-      .title,
       .description {
         text-align: center;
       }
@@ -77,6 +66,7 @@ const Home = () => (
         font-size: 13px;
         color: #333;
       }
+
     `}</style>
   </div>
 )
