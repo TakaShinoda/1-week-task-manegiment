@@ -17,7 +17,7 @@ const Home = () => (
     <div className="hero">
         <Title />
       <p className="description">
-        1週間のタスクを管理する
+        ここ1週間でやりたい事を管理する
       </p>
       
       <div className="row card">
