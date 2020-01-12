@@ -12,13 +12,12 @@ const Home = () => (
     </Head>
 
     <Nav />
-    <div>
-      <Title />
-    </div>
-    
+
+
     <div className="hero">
+        <Title />
       <p className="description">
-        1週間のタスクを管理するサイト
+        1週間のタスクを管理する
       </p>
       
       <div className="row card">
@@ -35,6 +34,7 @@ const Home = () => (
       }
       .description {
         text-align: center;
+        padding-top: 10px;
       }
       .row {
         max-width: 880px;
