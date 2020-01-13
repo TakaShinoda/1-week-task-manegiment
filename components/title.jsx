@@ -21,13 +21,13 @@ const Title = () => {
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-              <MediaQuery query="(min-width: 520px)">
+              <MediaQuery query="(min-width: 525px)">
                 <div className="min-width">
                 <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
                 </div>
               </MediaQuery>
 
-              <MediaQuery query="(max-width: 520px)" className="max-width">
+              <MediaQuery query="(max-width: 524px)" className="max-width">
                 <div className="max-width">
                   <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
                 </div>
