@@ -1,6 +1,6 @@
-import React from 'react'
-import { useTrail, animated } from 'react-spring'
-import MediaQuery from "react-responsive"
+import React from 'react';
+import { useTrail, animated } from 'react-spring';
+import MediaQuery from "react-responsive";
 
 const items = ['S', 'c', 'h', 'e', 'd', 'u','l','e']
 const config = { mass: 5, tension: 1800, friction: 200 }
@@ -21,13 +21,13 @@ const Title = () => {
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-              <MediaQuery query="(min-width: 525px)">
+              <MediaQuery query="(min-width: 768px)">
                 <div className="min-width">
                 <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
                 </div>
               </MediaQuery>
 
-              <MediaQuery query="(max-width: 524px)" className="max-width">
+              <MediaQuery query="(max-width: 767px)" className="max-width">
                 <div className="max-width">
                   <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
                 </div>
