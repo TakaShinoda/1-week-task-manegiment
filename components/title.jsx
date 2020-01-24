@@ -21,12 +21,13 @@ const Title = () => {
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
+              {/**web画面サイズ */}
               <MediaQuery query="(min-width: 768px)">
                 <div className="min-width">
                 <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
                 </div>
               </MediaQuery>
-
+              {/**スマホ画面サイズ */}
               <MediaQuery query="(max-width: 767px)" className="max-width">
                 <div className="max-width">
                   <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
@@ -46,11 +47,11 @@ const Title = () => {
               padding-bottom: 160px;
             }
             .min-width h1 {
-              color: #FF7E73;
+              color: #7ebc59;
               font-size: 150px;
             }
             .max-width h1 {
-              color: #FF7E73;
+              color: #7ebc59;
               font-size: 90px;
             }
         `}</style>

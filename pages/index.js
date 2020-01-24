@@ -6,21 +6,19 @@ import Title from '../components/title';
 import Button from '@material-ui/core/Button';
 
 const Home = () => (
-  <div>
+  <div className="home">
     <Head>
-      <title>Schedule Sticker</title>
+      <title>Schedule</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Nav />
 
-
-    <div className="hero">
+    <div>
         <Title />
       <p className="description">
         ここ1週間でやりたい事を管理する
       </p>
-      
       <div className="row card">
         <Link href='./signin'>
           <Button size="large" variant="outlined" color="primary" size="large" >
@@ -31,10 +29,6 @@ const Home = () => (
     </div>
 
     <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
       .description {
         text-align: center;
         padding-top: 10px;
