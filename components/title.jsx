@@ -21,7 +21,7 @@ const Title = () => {
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-              {/**web画面サイズ */}
+              {/**PC画面サイズ */}
               <MediaQuery query="(min-width: 768px)">
                 <div className="min-width">
                 <animated.div style={{ height }}><h1>{items[index]}</h1></animated.div>
