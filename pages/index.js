@@ -21,7 +21,7 @@ const Home = () => (
       </p>
       <div className="row card">
         <Link href='./signin'>
-          <Button size="large" variant="outlined" color="primary" size="large" >
+          <Button size="large" variant="outlined" color="primary" size="large" onClick={() => alert("hoge")} >
             はじめる
           </Button>
         </Link>  
