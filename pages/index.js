@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Nav from '../components/nav';
 import Title from '../components/title';
 import Button from '@material-ui/core/Button';
+import { auth, firebase } from '../src/firebase/firebase';
 
 const Home = () => (
   <div className="home">
